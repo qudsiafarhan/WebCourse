@@ -1,0 +1,56 @@
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>Introduction to basic HTML</h1>
+<h3> <b>1. </b> <a href="https://youtu.be/jNN08DbgAGQ?si=oAWAz-1zh1zk6yIK"> Basic Tags of HTML</a></h3>
+<h3> <b>2. </b> <a href="https://youtu.be/kKXcMgSDLXo?si=cfCkkMGCvY1NCxga"> Attributes of HTML</a> </h3>
+<h3> <b>3. </b> <a href="https://youtu.be/T128TDX3_K8?si=cOpCnR8DrRtzEN_7"> How to create a Table in HTML</a></h3>
+<h3> <b>4. </b> <a href="https://youtu.be/JoS0vnQZyi8?si=XL56TGNZEmftQHLF"> Form in HTML</a></h3>
+<h3> <b>5. </b> <a href="https://youtu.be/Pl5c7zeDIio?si=rG3J8HNJ0eBnegR1"> How to use Anchor Tag in HTML</a></h3>
+
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
